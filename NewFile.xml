@@ -1,0 +1,46 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Karim Business">
+		<listeners>
+<listener class-name ="groups.Executelistner"/>
+</listeners>
+	
+	<parameter name="browser" value="chrome" />
+	<parameter name="url" value="https://www.linkedin.com" />
+	<parameter name="username1" value="mdhussain16@gmail.com" />
+	<parameter name="password1" value="chennai63" />
+
+
+
+	<test verbose="2" name="Java joes" >
+
+		<parameter name="selenium" value="visual basic" />
+
+
+		<classes>
+
+			<class name="groups.testcase1"></class>
+			
+
+
+		</classes>
+	</test>
+	
+	<test verbose="2" name="sequential" parallel ="classes" thread-count="2">
+
+		<parameter name="selenium" value="visual basic" />
+
+
+		<classes>
+
+			
+			<class name="groups.testcase1"></class>
+
+
+		</classes>
+	</test>
+	
+
+
+</suite> 
+
