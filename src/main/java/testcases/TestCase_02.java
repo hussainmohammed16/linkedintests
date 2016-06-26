@@ -24,7 +24,7 @@ public class TestCase_02 extends LinkedInWrappers {
 	  System.out.println(result);
 	  String result1 =verifyTextByXPath("//*[@id='results_count']/div/p/strong[1]", result);
 	  if(result1.equalsIgnoreCase("true"))
-	  System.out.println("same text exist in web");
+	  System.out.println("same text exist in web application");
 	  else 
 	  System.out.println("different text");
 	  
